@@ -1,36 +1,50 @@
 import emailjs from "emailjs-com";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { TbTriangleFilled } from "react-icons/tb";
 
-const ContactUs = () => {
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [message, setMessage] = useState("");
+const ContactUs = React.forwardRef((props, ref) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const serviceID = "service_x5ldm2h";
+    const templateID = "template_6dnrytg";
+    const publicKey = "_GMeEG5UFmU_NowVh";
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: "Subham Kumar",
+      message: message,
+    };
+
     emailjs
-      .sendForm("service_x5ldm2h", "template_6dnrytg", form.current, {
-        publicKey: "_GMeEG5UFmU_NowVh",
+      .send(serviceID, templateID, templateParams, publicKey)
+      .then((response) => {
+        console.log("Successfully Sent!!", response);
+        console.log(name, email, message);
+        setName("");
+        setMessage("");
+        setEmail("");
       })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+      .catch((e) => {
+        console.log("Error: ", e);
+      });
   };
 
   return (
-    <section className="flex flex-col items-center py-20 px-40 h-[100vh]">
+    <section
+      ref={ref}
+      className="flex flex-col items-center py-20 px-40 h-[100vh]"
+    >
       <span className="flex items-center gap-10">
         <TbTriangleFilled className="-rotate-90" />
-        <h3 className="text-xl font-rubik tracking-wider">Get in Touch</h3>
+        <h3 className="text-xl font-kalnia tracking-wider">Get in Touch</h3>
         <TbTriangleFilled className="rotate-90" />
       </span>
 
@@ -59,7 +73,9 @@ const ContactUs = () => {
                 name="name"
                 id="name"
                 placeholder="E.g. Jaun Dough"
-                className="outline-none h-12 px-4 border-[#ffe837] border-2 bg-transparent rounded"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="outline-none h-12 px-4 border-text border-2 bg-transparent rounded"
               />
             </div>
             <div className="w-1/2 flex flex-col gap-2">
@@ -71,7 +87,9 @@ const ContactUs = () => {
                 name="email"
                 id="email"
                 placeholder="youremail@example.com"
-                className="outline-none h-12 px-4 border-[#ffe837] border-2 bg-transparent rounded"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="outline-none h-12 px-4 border-text border-2 bg-transparent rounded"
               />
             </div>
           </div>
@@ -83,18 +101,20 @@ const ContactUs = () => {
               id="message"
               name="message"
               placeholder="Your message here.."
-              className="outline-none h-full p-4 border-[#ffe837] border-2 bg-transparent rounded"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              className="outline-none h-full p-4 border-text border-2 bg-transparent rounded"
             ></textarea>
           </div>
           <input
             type="submit"
-            className="active:scale-95 transition-all duration-300 ease-in-out px-4 py-2 bg-[#FFE837] hover:bg-transparent border-2 border-[#ffe837] hover:text-[#ffe837] text-black text-xl font-semibold font-rubik rounded"
+            className="active:scale-95 transition-all duration-300 ease-in-out px-4 py-2 bg-primary hover:bg-transparent border-2 border-text hover:text-primary text-black text-xl font-semibold font-rubik rounded cursor-pointer"
             value={"Send Message"}
           />
         </form>
       </div>
     </section>
   );
-};
+});
 
 export default ContactUs;

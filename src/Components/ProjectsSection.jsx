@@ -1,7 +1,7 @@
 import React from "react";
 import { TbTriangleFilled } from "react-icons/tb";
 import ProjectCard from "./Util/ProjectCard";
-const ProjectsSection = () => {
+const ProjectsSection = React.forwardRef((props, ref) => {
   const projects = [
     {
       id: 1,
@@ -38,10 +38,10 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center py-10 px-40 h-[100vh] bg-[#062723b4] ">
+    <div ref={ref} className="flex flex-col items-center py-10 px-40 h-[100vh] bg-[#062723b4] ">
       <span className="flex items-center gap-10">
         <TbTriangleFilled className="-rotate-90" />{" "}
-        <h3 className="text-xl font-rubik tracking-wider">Projects</h3>
+        <h3 className="text-xl font-kalnia tracking-wider">Projects</h3>
         <TbTriangleFilled className="rotate-90" />
       </span>
       <main className="grid grid-cols-2">
@@ -58,6 +58,6 @@ const ProjectsSection = () => {
       </main>
     </div>
   );
-};
+});
 
 export default ProjectsSection;

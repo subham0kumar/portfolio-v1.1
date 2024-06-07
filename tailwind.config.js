@@ -6,15 +6,16 @@ export default {
       fontFamily: {
         rubik: ["Rubik", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        cagliostro: ["Cagliostro", "sans-serif"],
+        kalnia: ["Kalnia", "sans-serif"],
       },
       colors: {
-        'text': '#e3fbf9',
-        'background': '#05201d',
-        'primary': '#8eeee3',
-        'secondary': '#143485',
-        'accent': '#3f37e0',
-       },
-       
+        text: "#e3fbf9",
+        background: "#05201d",
+        primary: "#8eeee3",
+        secondary: "#143485",
+        accent: "#3f37e0",
+      },
     },
   },
   plugins: [],

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import AboutSection from "../Components/AboutSection";
 import ContactUs from "../Components/ContactUs";
 import Footer from "../Components/Footer";
@@ -22,6 +22,10 @@ const imageUrls = [
 ];
 
 const LandingPage = () => {
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectRef = useRef(null);
+  const contactRef = useRef(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -45,11 +49,18 @@ const LandingPage = () => {
         <LoadingScreen />
       ) : (
         <div>
-          <Navbar />
-          <HeroSection />
-          <AboutSection />
-          <ProjectsSection />
-          <ContactUs />
+          <Navbar
+            refs={{
+              home: homeRef,
+              about: aboutRef,
+              project: projectRef,
+              contact: contactRef,
+            }}
+          />
+          <HeroSection ref={homeRef} />
+          <AboutSection ref={aboutRef} />
+          <ProjectsSection ref={projectRef} />
+          <ContactUs ref={contactRef} />
           <Footer />
         </div>
       )}
