@@ -54,14 +54,14 @@ const HeroSection = React.forwardRef((props, ref) => {
           </span>
         </aside>
         <aside>
-          <AnimeBorder loading="lazy" imgSrc={"src/static/pp.png"} />
+          <AnimeBorder loading="lazy" imgSrc={"src/assets/static/pp.png"} />
         </aside>
       </div>
       <div className="mt-3">
         <div className="px-8 py-4 lg:flex grid grid-cols-4 gap-4 items-end justify-between font-poppins">
           <div className="group flex flex-col items-center justify-center ">
             <img
-              src="src\static\css3.png"
+              src="src\assets\static\css3.png"
               alt="css3"
               width={70}
               className={iconsStyle}
@@ -71,7 +71,7 @@ const HeroSection = React.forwardRef((props, ref) => {
           </div>
           <div className="group flex flex-col items-center justify-center ">
             <img
-              src="src\static\html5.png"
+              src="src\assets\static\html5.png"
               alt="html5"
               width={70}
               className={iconsStyle}
@@ -81,7 +81,7 @@ const HeroSection = React.forwardRef((props, ref) => {
           </div>
           <div className="group flex flex-col items-center justify-center">
             <img
-              src="src\static\js.png"
+              src="src\assets\static\js.png"
               alt="js"
               width={65}
               className={iconsStyle}
@@ -91,7 +91,7 @@ const HeroSection = React.forwardRef((props, ref) => {
           </div>
           <div className="group flex flex-col items-center justify-center  ">
             <img
-              src="src\static\react.png"
+              src="src\assets\static\react.png"
               alt="react"
               width={60}
               className={iconsStyle}
@@ -101,7 +101,7 @@ const HeroSection = React.forwardRef((props, ref) => {
           </div>
           <div className="group flex flex-col items-center justify-center ">
             <img
-              src="src\static\tailwindcss.jpg"
+              src="src\assets\static\tailwindcss.jpg"
               alt="twcss"
               width={60}
               className={iconsStyle}
@@ -111,7 +111,7 @@ const HeroSection = React.forwardRef((props, ref) => {
           </div>
           <div className="group flex flex-col items-center justify-center ">
             <img
-              src="src\static\git.png"
+              src="src\assets\static\git.png"
               alt="git"
               width={70}
               className={iconsStyle}
@@ -121,7 +121,7 @@ const HeroSection = React.forwardRef((props, ref) => {
           </div>
           <div className="group flex flex-col items-center justify-center ">
             <img
-              src="src\static\figma.png"
+              src="src\assets\static\figma.png"
               alt="figma"
               width={70}
               className={iconsStyle}
@@ -131,7 +131,7 @@ const HeroSection = React.forwardRef((props, ref) => {
           </div>
           <div className="group flex flex-col items-center justify-center ">
             <img
-              src="src\static\mui.jpg"
+              src="src\assets\static\mui.jpg"
               alt="mui"
               width={70}
               className={iconsStyle}

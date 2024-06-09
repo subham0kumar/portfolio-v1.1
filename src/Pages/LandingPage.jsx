@@ -9,16 +9,16 @@ import LoadingScreen from "../Components/Util/Loader/LoadingScreen";
 import { PreloadImages } from "../Components/Util/PreloadImages";
 
 const imageUrls = [
-  "src/static/css3.png",
-  "src/static/figma.png",
-  "src/static/git.png",
-  "src/static/html5.png",
-  "src/static/js.png",
-  "src/static/mui.jpg",
-  "src/static/pp.png",
-  "src/static/react.png",
-  "src/static/tailwindcss.jpg",
-  "src/static/Typing-bro.png",
+  "src/assests/static/css3.png",
+  "src/assests/static/figma.png",
+  "src/assests/static/git.png",
+  "src/assests/static/html5.png",
+  "src/assests/static/js.png",
+  "src/assests/static/mui.jpg",
+  "src/assests/static/pp.png",
+  "src/assests/static/react.png",
+  "src/assests/static/tailwindcss.jpg",
+  "src/assests/static/Typing-bro.png",
 ];
 
 const LandingPage = () => {
