@@ -5,7 +5,7 @@ const RotatingText = () => {
   const rotatText = "React Frontend Developer - Subham Kumar";
 
   return (
-    <div className="circle font-rubik">
+    <div className="hidden lg:flex items-center justify-center circle font-rubik">
       <div className="text-8xl px-12 py-16 bg-background rounded-full">💻</div>
       <div className="text">
         {rotatText.split("").map((char, i) => {

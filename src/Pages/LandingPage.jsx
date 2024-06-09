@@ -37,7 +37,7 @@ const LandingPage = () => {
         console.error("Error loading images:", error);
         setLoading(false);
       }
-    }, 2000);
+    }, 1500);
     return () => {
       clearTimeout(timer1);
     };

@@ -7,17 +7,17 @@ const iconsStyle =
   "rounded-full border-2 border-primary bg-transparent group-hover:-translate-y-2 transition-all duration-700 ease-in-out  hover:cursor-pointer";
 const HeroSection = React.forwardRef((props, ref) => {
   return (
-    <section ref={ref} className="px-60 py-16 bg-[#062723b4]">
-      <div className="flex items-center justify-between">
-        <aside className="pr-14">
-          <div className="flex flex-col font-bold font-kalnia">
-            <h1 className="text-6xl mb-6 font-semibold">
-              React Front-End Developer
+    <section ref={ref} className="w-full lg:px-60 lg:py-16 px-10 bg-[#062723b4]">
+      <div className="lg:flex-row flex-col-reverse flex items-center justify-between">
+        <aside className="flex flex-col lg:items-start items-center justify-center lg:pr-14">
+          <div className="lg:text-left text-center flex flex-col font-bold font-kalnia">
+            <h1 className="text-4xl lg:text-6xl mb-6 font-semibold">
+              React Frontend Developer
             </h1>
-            <h2 className="text-3xl font-medium font-rubik mb-2">
+            <h2 className="text-xl lg:text-3xl font-medium font-rubik mb-2">
               Hi, I am Subham
             </h2>
-            <h3 className="text-lg font-normal mb-2 font-rubik tracking-widest">
+            <h3 className="text-sm lg:text-lg font-normal mb-2 font-rubik tracking-widest">
               I'm passionate about crafting experiences that are engaging,
               accessible, and user-centric.
             </h3>
@@ -58,7 +58,7 @@ const HeroSection = React.forwardRef((props, ref) => {
         </aside>
       </div>
       <div className="mt-3">
-        <div className="flex gap-4 items-end justify-between font-poppins">
+        <div className="px-8 py-4 lg:flex grid grid-cols-4 gap-4 items-end justify-between font-poppins">
           <div className="group flex flex-col items-center justify-center ">
             <img
               src="src\static\css3.png"
@@ -67,7 +67,7 @@ const HeroSection = React.forwardRef((props, ref) => {
               className={iconsStyle}
               id="css"
             />
-            <label htmlFor="css">CSS</label>
+            <label htmlFor="css" className="hidden lg:block">CSS</label>
           </div>
           <div className="group flex flex-col items-center justify-center ">
             <img
@@ -77,7 +77,7 @@ const HeroSection = React.forwardRef((props, ref) => {
               className={iconsStyle}
               id="html"
             />
-            <label htmlFor="html">HTML</label>
+            <label htmlFor="html" className="hidden lg:block">HTML</label>
           </div>
           <div className="group flex flex-col items-center justify-center">
             <img
@@ -87,7 +87,7 @@ const HeroSection = React.forwardRef((props, ref) => {
               className={iconsStyle}
               id="js"
             />
-            <label htmlFor="js">JavaScript</label>
+            <label htmlFor="js" className="hidden lg:block">JavaScript</label>
           </div>
           <div className="group flex flex-col items-center justify-center  ">
             <img
@@ -97,7 +97,7 @@ const HeroSection = React.forwardRef((props, ref) => {
               className={iconsStyle}
               id="react"
             />
-            <label htmlFor="react">React JS</label>
+            <label htmlFor="react" className="hidden lg:block">React JS</label>
           </div>
           <div className="group flex flex-col items-center justify-center ">
             <img
@@ -107,7 +107,7 @@ const HeroSection = React.forwardRef((props, ref) => {
               className={iconsStyle}
               id="tailwindcss"
             />
-            <label htmlFor="tailwindcss">Tailwind CSS</label>
+            <label htmlFor="tailwindcss" className="hidden lg:block">Tailwind CSS</label>
           </div>
           <div className="group flex flex-col items-center justify-center ">
             <img
@@ -117,7 +117,7 @@ const HeroSection = React.forwardRef((props, ref) => {
               className={iconsStyle}
               id="git"
             />
-            <label htmlFor="git">GIT</label>
+            <label htmlFor="git" className="hidden lg:block">GIT</label>
           </div>
           <div className="group flex flex-col items-center justify-center ">
             <img
@@ -127,7 +127,7 @@ const HeroSection = React.forwardRef((props, ref) => {
               className={iconsStyle}
               id="figma"
             />
-            <label htmlFor="figma">Figma</label>
+            <label htmlFor="figma" className="hidden lg:block">Figma</label>
           </div>
           <div className="group flex flex-col items-center justify-center ">
             <img
@@ -137,7 +137,7 @@ const HeroSection = React.forwardRef((props, ref) => {
               className={iconsStyle}
               id="mui"
             />
-            <label htmlFor="mui">Material UI</label>
+            <label htmlFor="mui" className="hidden lg:block">Material UI</label>
           </div>
         </div>
       </div>

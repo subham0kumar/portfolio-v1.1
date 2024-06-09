@@ -40,7 +40,7 @@ const ContactUs = React.forwardRef((props, ref) => {
   return (
     <section
       ref={ref}
-      className="flex flex-col items-center py-20 px-40 h-[100vh]"
+      className="w-full flex flex-col items-center py-20 lg:px-40 h-fit lg:h-screen"
     >
       <span className="flex items-center gap-10">
         <TbTriangleFilled className="-rotate-90" />
@@ -48,27 +48,28 @@ const ContactUs = React.forwardRef((props, ref) => {
         <TbTriangleFilled className="rotate-90" />
       </span>
 
-      <div className="w-full gap-4 py-10 flex items-center justify-around">
+      <div className="w-full gap-4 py-10 flex lg:flex-row flex-col items-center justify-around">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116921.11374778107!2d86.91187345927469!3d23.68365251534014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f71f0ea1022529%3A0xf888f7e7fd11cefe!2sAsansol%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1716902318458!5m2!1sen!2sin"
-          width="50%"
-          height="450"
+          // width="50%"
+          // height="450"
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="border-0"
+          className="border-0 lg:h-[450px] h-52 w-full lg:w-1/2"
         ></iframe>
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="w-1/2 p-4 mx-10 flex flex-col gap-4"
+          className="w-full py-6 px-6 lg:w-1/2 lg:p-4 lg:mx-10 flex flex-col gap-4"
         >
-          <div className="w-full flex gap-4 items-center justify-between">
-            <div className="w-1/2 flex flex-col gap-2">
+          <div className="w-full flex lg:flex-row flex-col gap-4 items-center justify-between">
+            <div className="lg:w-1/2 w-full flex flex-col gap-2">
               <label htmlFor="name" className="font-bold text-lg">
                 Full Name <b className="text-Gbay-700 font-bold text-xl">*</b>
               </label>
               <input
+                required
                 type="text"
                 name="name"
                 id="name"
@@ -78,11 +79,12 @@ const ContactUs = React.forwardRef((props, ref) => {
                 className="outline-none h-12 px-4 border-text border-2 bg-transparent rounded"
               />
             </div>
-            <div className="w-1/2 flex flex-col gap-2">
+            <div className="lg:w-1/2 w-full flex flex-col gap-2">
               <label htmlFor="email" className="font-bold text-lg">
                 E-mail <b className="text-Gbay-700 font-bold text-xl">*</b>
               </label>
               <input
+                required
                 type="email"
                 name="email"
                 id="email"
@@ -98,6 +100,7 @@ const ContactUs = React.forwardRef((props, ref) => {
               Your message <b className="text-Gbay-700 font-bold text-xl">*</b>
             </label>
             <textarea
+              required
               id="message"
               name="message"
               placeholder="Your message here.."
