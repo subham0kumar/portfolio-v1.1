@@ -6,7 +6,7 @@ const ProjectsSection = React.forwardRef((props, ref) => {
     {
       id: 1,
       title: "Wheels-4-Rent",
-      imgUrl: "src/assets/static/projects/Wheels4Rent.jpg",
+      imgUrl: "/static/projects/Wheels4Rent.jpg",
       description: "A car renting site for India",
       liveLink: "",
       githubLink: "https://github.com/subham0kumar/wheels4rent",
@@ -14,7 +14,7 @@ const ProjectsSection = React.forwardRef((props, ref) => {
     {
       id: 2,
       title: "AniBuy",
-      imgUrl: "src/assets/static/projects/AniBuy.png",
+      imgUrl: "/static/projects/AniBuy.png",
       description: "Anime merchendise online store",
       liveLink: "https://anibuy-subham0kumar.netlify.app/",
       githubLink: "https://github.com/subham0kumar/aniBuy",
@@ -22,7 +22,7 @@ const ProjectsSection = React.forwardRef((props, ref) => {
     {
       id: 3,
       title: "Crypto-Tracker",
-      imgUrl: "src/assets/static/projects/CryptoTracker.png",
+      imgUrl: "/static/projects/CryptoTracker.png",
       description: "Track your crypto currencies",
       liveLink: "https://crypto-tracker-subham0kumar.netlify.app/",
       githubLink: "https://github.com/subham0kumar/crypto-tracker",
@@ -30,7 +30,7 @@ const ProjectsSection = React.forwardRef((props, ref) => {
     {
       id: 4,
       title: "WorkTodo",
-      imgUrl: "src/assets/static/projects/advTodolist.png",
+      imgUrl: "/static/projects/advTodolist.png",
       description: "One place for daily tasks' managment",
       liveLink: "https://worktodo-subham0kumar.netlify.app/",
       githubLink: "https://github.com/subham0kumar/advance-TodoList",
