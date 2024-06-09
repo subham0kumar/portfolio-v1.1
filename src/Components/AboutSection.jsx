@@ -9,7 +9,7 @@ const AboutSection = React.forwardRef((props, ref) => {
     >
       <aside className="relative lg:-translate-x-[50px] lg:w-1/2 w-full">
         <img
-          src="src/assets/static/Typing-bro.png"
+          src="/static/Typing-bro.png"
           alt="typing"
           className="mix-blend-lighten"
         />
