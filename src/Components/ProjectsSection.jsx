@@ -8,7 +8,7 @@ const ProjectsSection = React.forwardRef((props, ref) => {
       title: "Wheels-4-Rent",
       imgUrl: "/static/projects/Wheels4Rent.jpg",
       description: "A car renting site for India",
-      liveLink: "",
+      liveLink: "https://wheels4rent.netlify.app/",
       githubLink: "https://github.com/subham0kumar/wheels4rent",
     },
     {

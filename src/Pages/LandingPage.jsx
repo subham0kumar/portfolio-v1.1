@@ -19,7 +19,7 @@ const imageUrls = [
   "/static/react.png",
   "/static/tailwindcss.jpg",
   "/static/Typing-bro.png",
-];
+]
 
 const LandingPage = () => {
   const homeRef = useRef(null);
