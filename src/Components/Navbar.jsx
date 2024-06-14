@@ -14,12 +14,14 @@ const Navbar = ({ refs }) => {
   return (
     <nav className="flex navbar font-kalnia shadow-xl w-full justify-between items-center lg:px-20 px-10 py-6">
       <header>
-        <a
-          href="/"
-          className="hover:underline underline-offset-4 font-rubik font-bold text-2xl lg:text-xl tracking-widest"
-        >
-          Subham
-        </a>
+        <h3>
+          <a
+            href="/"
+            className="hover:underline underline-offset-4 font-rubik font-bold text-2xl lg:text-xl tracking-widest"
+          >
+            Subham
+          </a>
+        </h3>
       </header>
       <section>
         <button

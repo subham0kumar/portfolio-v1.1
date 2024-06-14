@@ -7,6 +7,7 @@ import Navbar from "../Components/Navbar";
 import ProjectsSection from "../Components/ProjectsSection";
 import LoadingScreen from "../Components/Util/Loader/LoadingScreen";
 import { PreloadImages } from "../Components/Util/PreloadImages";
+import CustomCursor from "../Components/Util/CustomCursor";
 
 const imageUrls = [
   "/static/css3.png",
@@ -19,7 +20,7 @@ const imageUrls = [
   "/static/react.png",
   "/static/tailwindcss.jpg",
   "/static/Typing-bro.png",
-]
+];
 
 const LandingPage = () => {
   const homeRef = useRef(null);
@@ -48,7 +49,7 @@ const LandingPage = () => {
       {loading ? (
         <LoadingScreen />
       ) : (
-        <div>
+        <div className="relative">
           <Navbar
             refs={{
               home: homeRef,
@@ -57,6 +58,7 @@ const LandingPage = () => {
               contact: contactRef,
             }}
           />
+          <CustomCursor />
           <HeroSection ref={homeRef} />
           <AboutSection ref={aboutRef} />
           <ProjectsSection ref={projectRef} />
