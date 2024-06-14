@@ -52,11 +52,11 @@ const CustomCursor = () => {
     <>
       <div
         ref={outerRef}
-        className={`z-[999999] outer-cursor fixed left-3 w-8 h-8 -translate-x-1/2 -translate-y-1/2 border border-white mix-blend-difference rounded-full pointer-events-none`}
+        className={`lg:opacity-100 opacity-0 z-[999999] outer-cursor fixed left-3 w-8 h-8 -translate-x-1/2 -translate-y-1/2 border border-white mix-blend-difference rounded-full pointer-events-none`}
       ></div>
       <div
         ref={innerRef}
-        className="z-[999999] inner-cursor fixed left-3 border border-white p-2 w-3 h-3 -translate-x-1/2 -translate-y-1/2 bg-white mix-blend-difference rounded-full pointer-events-none"
+        className="lg:opacity-100 opacity-0 z-[999999] inner-cursor fixed left-3 border border-white p-2 w-3 h-3 -translate-x-1/2 -translate-y-1/2 bg-white mix-blend-difference rounded-full pointer-events-none"
       ></div>
     </>
   );
