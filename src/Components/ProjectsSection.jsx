@@ -51,7 +51,7 @@ const ProjectsSection = React.forwardRef((props, ref) => {
         <h3 className="text-xl font-kalnia tracking-wider">Projects</h3>
         <TbTriangleFilled className="rotate-90" />
       </span>
-      <main className="grid lg:grid-cols-2">
+      <main className="fadeInAnimation grid lg:grid-cols-2">
         {projects.map((project, index) => (
           <div key={index}>
             <h1 className="lg:hidden text-center underline tracking-widest underline-offset-4 font-kalnia pt-6 text-2xl">
