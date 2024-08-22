@@ -1,8 +1,22 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project is a personal portfolio website designed to showcase my experience, projects, and skills. It serves as a digital resume that highlights my qualifications and allows potential employers or clients to contact me directly. The website is built with a focus on dynamic design, interactivity, and responsiveness, ensuring an engaging user experience across all devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Dynamic Design**: Smooth transitions and animations enhance the user experience.
+- **Interactive Elements**: Engaging components that respond to user actions.
+- **Responsive Design**: Optimized for viewing on devices of all sizes, from mobile phones to desktop monitors.
+
+## Live Site
+
+Visit the live site at: [https://subham-kumar-portfolio.netlify.app/](https://subham-kumar-portfolio.netlify.app/)
+
+## Technologies Used
+
+- **React + Vite**: Fast and efficient front-end development with a modern toolchain.
+- **JavaScript**: Core scripting language for dynamic content.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+
