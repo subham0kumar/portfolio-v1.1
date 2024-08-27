@@ -9,7 +9,7 @@ const Navbar = ({ refs }) => {
   };
 
   const linkStyle =
-    "tracking-wide bg-gradient-to-r from-accent to-accent bg-no-repeat bg-left-bottom bg-[length:0%_3px] transition-all duration-200 tracking-widest ease-in hover:bg-[length:100%_3px] p-2";
+    "bg-gradient-to-r from-accent to-accent bg-no-repeat bg-left-bottom bg-[length:0%_3px] transition-all duration-200 tracking-widest ease-in hover:bg-[length:100%_3px] p-2";
 
   return (
     <nav className="flex navbar font-kalnia shadow-xl w-full justify-between items-center lg:px-20 px-10 py-6">
