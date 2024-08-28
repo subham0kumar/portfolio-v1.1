@@ -7,7 +7,7 @@ import Navbar from "../Components/Navbar";
 import ProjectsSection from "../Components/ProjectsSection";
 import LoadingScreen from "../Components/Util/Loader/LoadingScreen";
 import { PreloadImages } from "../Components/Util/PreloadImages";
-import CustomCursor from "../Components/Util/CustomCursor";
+// import CustomCursor from "../Components/Util/CustomCursor";
 
 const imageUrls = [
   "/static/css3.png",
@@ -58,7 +58,7 @@ const LandingPage = () => {
               contact: contactRef,
             }}
           />
-          <CustomCursor />
+          {/* <CustomCursor /> */}
           <HeroSection ref={homeRef} />
           <AboutSection ref={aboutRef} />
           <ProjectsSection ref={projectRef} />
