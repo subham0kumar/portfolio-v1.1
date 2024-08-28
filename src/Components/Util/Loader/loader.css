@@ -1,83 +1,44 @@
-.loader {
-  transform: rotateZ(45deg);
-  perspective: 1000px;
+/* From Uiverse.io by AqFox */
+.spinner {
+  width: 125px;
+  height: 125px;
+  display: grid;
+  color: #8eeee3ff;
+  background: radial-gradient(
+    farthest-side,
+    currentColor calc(100% - 6px),
+    #0000 calc(100% - 7px) 0
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(100% - 15px),
+    #000 calc(100% - 13px)
+  );
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(100% - 15px),
+    #000 calc(100% - 13px)
+  );
   border-radius: 50%;
-  width: 148px;
-  height: 148px;
-  color: #91ff00;
+  animation: spinner-sm4bhi 2s infinite linear;
 }
 
-.loader:before,
-.loader:after {
+.spinner::before,
+.spinner::after {
   content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: inherit;
-  height: inherit;
-  border-radius: 50%;
-  transform: rotateX(70deg);
-  animation: 1s spin linear infinite;
+  grid-area: 1/1;
+  background: linear-gradient(currentColor 0 0) center,
+    linear-gradient(currentColor 0 0) center;
+  background-size: 100% 11px, 11px 100%;
+  background-repeat: no-repeat;
 }
 
-.loader:after {
-  color: #ff3d00;
-  transform: rotateY(70deg);
-  animation-delay: 0.4s;
+.spinner::after {
+  transform: rotate(45deg);
 }
 
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotateZ(0deg);
-  }
-
+@keyframes spinner-sm4bhi {
   100% {
-    transform: translate(-50%, -50%) rotateZ(360deg);
-  }
-}
-
-@keyframes rotateccw {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(-50%, -50%) rotate(-360deg);
-  }
-}
-
-@keyframes spin {
-  0%,
-  100% {
-    box-shadow: 0.2em 0px 0 0px currentcolor;
-  }
-
-  12% {
-    box-shadow: 0.2em 0.2em 0 0 currentcolor;
-  }
-
-  25% {
-    box-shadow: 0 0.2em 0 0px currentcolor;
-  }
-
-  37% {
-    box-shadow: -0.2em 0.2em 0 0 currentcolor;
-  }
-
-  50% {
-    box-shadow: -0.2em 0 0 0 currentcolor;
-  }
-
-  62% {
-    box-shadow: -0.2em -0.2em 0 0 currentcolor;
-  }
-
-  75% {
-    box-shadow: 0px -0.2em 0 0 currentcolor;
-  }
-
-  87% {
-    box-shadow: 0.2em -0.2em 0 0 currentcolor;
+    transform: rotate(1turn);
   }
 }
