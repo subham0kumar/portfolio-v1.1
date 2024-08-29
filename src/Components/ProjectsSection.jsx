@@ -30,7 +30,7 @@ const ProjectsSection = React.forwardRef((props, ref) => {
       imgUrl: "/static/projects/CryptoTracker.png",
       videoUrl: "/static/projects/videos/Hexa-Mov.mp4",
       description: "Track your crypto currencies",
-      techStack: ["ReactJS", "Material UI", "CoinGecko API"],
+      techStack: ["ReactJS", "MUI", "CoinGecko"],
       liveLink: "https://crypto-tracker-subham0kumar.netlify.app/",
       githubLink: "https://github.com/subham0kumar/crypto-tracker",
     },
