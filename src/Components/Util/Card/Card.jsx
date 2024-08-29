@@ -1,5 +1,6 @@
 import React from "react";
 import "./Card.css";
+import { FaGithub } from "react-icons/fa";
 
 const Card = ({
   title,
@@ -31,7 +32,7 @@ const Card = ({
           ></video>
         </div>
         <div className="project-info">
-          <div className="flex-pr pt-10">
+          <div className="flex-pr">
             <p className="project-title text-nowrap font-kalnia">{title}</p>
             <button onClick={handleSiteLink} className="project-hover">
               <svg
@@ -53,19 +54,24 @@ const Card = ({
             </button>
           </div>
           <article className="font-rubik">{desc}</article>
-          <div className="types font-rubik">
+          <div className="types font-rubik grid grid-cols-3 lg:grid-cols-4">
             <button
               onClick={handleGitLink}
               style={{
                 backgroundColor: "rgba(165, 96, 247, 0.43)",
                 color: "#8eeee3",
               }}
-              className="project-type tracking-wider"
+              className="flex items-center gap-2 project-type tracking-wider active:translate-y-[2px] hover:-translate-y-1 transition-transform ease-in-out border-2"
             >
-              • Github Repo
+              <FaGithub /> Repo
             </button>
-            {techStack.map((tech) => (
-              <span className="project-type">• {tech}</span>
+            {techStack.map((tech, index) => (
+              <span
+                key={index}
+                className="project-type border-2 border-transparent"
+              >
+                • {tech}
+              </span>
             ))}
           </div>
         </div>

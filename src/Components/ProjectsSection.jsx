@@ -1,6 +1,5 @@
 import React from "react";
 import { TbTriangleFilled } from "react-icons/tb";
-import ProjectCard from "./Util/ProjectCard";
 import Card from "./Util/Card/Card";
 const ProjectsSection = React.forwardRef((props, ref) => {
   const projects = [
@@ -46,9 +45,6 @@ const ProjectsSection = React.forwardRef((props, ref) => {
     },
   ];
 
-  const handleLink = (link) => {
-    window.open(`${link}`, "_blank");
-  };
 
   return (
     <div
@@ -60,7 +56,7 @@ const ProjectsSection = React.forwardRef((props, ref) => {
         <h3 className="text-xl font-kalnia tracking-wider">Projects</h3>
         <TbTriangleFilled className="rotate-90" />
       </span>
-      <main className="fadeInAnimation grid lg:grid-cols-2 p-10 gap-10">
+      <main className="lg:fadeInAnimation grid lg:grid-cols-2 p-10 gap-10">
         {projects.map((project, index) => (
           <div key={index}>
             <Card
