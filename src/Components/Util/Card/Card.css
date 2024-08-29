@@ -1,6 +1,6 @@
 /* From Uiverse.io by Amine-maker */
 .article-wrapper {
-  width: 32vw;
+  /* width: 32vw; */
   -webkit-transition: 0.15s all ease-in-out;
   transition: 0.15s all ease-in-out;
   border-radius: 10px;

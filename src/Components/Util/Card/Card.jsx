@@ -18,7 +18,7 @@ const Card = ({
   };
   return (
     <>
-      <article className="article-wrapper">
+      <article className="article-wrapper lg:w-[32vw]">
         <div className="rounded-lg container-project">
           <video
             loop

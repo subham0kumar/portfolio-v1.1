@@ -63,18 +63,6 @@ const ProjectsSection = React.forwardRef((props, ref) => {
       <main className="fadeInAnimation grid lg:grid-cols-2 p-10 gap-10">
         {projects.map((project, index) => (
           <div key={index}>
-            <h1 className="lg:hidden text-center underline tracking-widest underline-offset-4 font-kalnia pt-6 text-2xl">
-              {project.title}
-            </h1>
-            {/* <ProjectCard
-              title={project.title}
-              desc={project.description}
-              gitLink={project.githubLink}
-              imgUrl={project.imgUrl}
-              videoUrl={project.videoUrl}
-              liveUrl={project.liveLink}
-              key={project.id}
-            /> */}
             <Card
               title={project.title}
               desc={project.description}
@@ -85,20 +73,6 @@ const ProjectsSection = React.forwardRef((props, ref) => {
               key={project.id}
               techStack={project.techStack}
             />
-            <div className="lg:hidden items-start justify-between font-rubik flex gap-4 p-4">
-              <button
-                className="active:scale-95 transition-all duration-300 ease-in-out px-4 py-2 bg-primary border-2 border-primary text-secondary font-semibold rounded"
-                onClick={() => handleLink(project.liveLink)}
-              >
-                Live Site
-              </button>
-              <button
-                className="active:scale-95 transition-all duration-300 ease-in-out px-4 py-2 bg-transparent border-2 border-primary text-primary font-semibold rounded"
-                onClick={() => handleLink(project.githubLink)}
-              >
-                Code
-              </button>
-            </div>
           </div>
         ))}
       </main>
