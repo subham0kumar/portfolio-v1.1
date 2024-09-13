@@ -60,8 +60,8 @@ const LandingPage = () => {
           />
           {/* <CustomCursor /> */}
           <HeroSection ref={homeRef} />
-          <AboutSection ref={aboutRef} />
           <ProjectsSection ref={projectRef} />
+          <AboutSection ref={aboutRef} />
           <ContactUs ref={contactRef} />
           <Footer />
         </div>
